@@ -35,3 +35,13 @@ check files="pdf/*.pdf":
 test:
     mkdir -p out
     for l in en pt; do for f in fin tech; do {{tc}} --input lang=$l --input focus=$f tests/lib.typ out/test.pdf; done; done; echo "tests ok"
+
+# 5 themes × en × {fin,tech} with PNG previews, for choosing a theme
+compare:
+    for t in {{themes}}; do for f in fin tech; do just build $t en $f out/compare/$t-en-$f.pdf; pdftoppm -png -r 80 -singlefile out/compare/$t-en-$f.pdf out/compare/$t-en-$f; done; done
+    just check "out/compare/*.pdf"
+
+# Final PDFs with the chosen theme
+all:
+    for l in en pt; do for f in fin tech; do just build {{theme}} $l $f pdf/cv-$l-$f.pdf; done; done
+    just check

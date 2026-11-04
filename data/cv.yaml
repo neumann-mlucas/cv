@@ -1,0 +1,203 @@
+basics:
+  name: "Lucas Neumann"
+  email: "neumann.m.lucas@gmail.com"
+  phone: "+55 55 99966-4032"
+  github: "neumann-mlucas"
+  linkedin: "lucas-mneumann"
+  web: "neumann-mlucas.github.io/cv"
+  location:
+    en: "São Paulo, Brazil · Open to relocation / remote"
+    pt: "São Paulo, SP"
+  headline:
+    en: "Senior Software Engineer — Pricing, Risk & AI Tooling"
+    pt: "Engenheiro de Software Sênior — Precificação, Risco e Ferramentas de IA"
+  summary:
+    fin:
+      en: "Senior software engineer building pricing and risk systems on both sides of the market: a hedge fund, Bank of America's FICC emerging-markets desk and an investment manager. Rates, credit and FX derivatives, Bloomberg MARS, vendor PMS platforms, VaR, expected shortfall and Greeks — backed by strong Python, Go and cloud engineering."
+      pt: "Engenheiro de software sênior construindo sistemas de precificação e risco no buy side e no sell side: hedge fund, mesa de mercados emergentes (FICC) do Bank of America e gestora de investimentos. Derivativos de juros, crédito e câmbio, Bloomberg MARS, plataformas PMS, VaR, expected shortfall e gregas — com base sólida em Python, Go e cloud."
+    tech:
+      en: "Senior backend engineer (Python, Go) building data pipelines, cloud infrastructure and AI-agent tooling for financial systems. Designed MCP-based tooling that gives LLM agents safe, read-only access to production data, and owned real-time market-data and pricing services where downtime is not an option."
+      pt: "Engenheiro backend sênior (Python, Go) construindo pipelines de dados, infraestrutura cloud e ferramentas para agentes de IA em sistemas financeiros. Projetei ferramentas baseadas em MCP que dão a agentes LLM acesso seguro e somente leitura a dados de produção, e fui responsável por serviços de market data e precificação em tempo real onde indisponibilidade não é opção."
+  kpis:
+    - value: "5+"
+      label: {en: "years in finance technology", pt: "anos em tecnologia financeira"}
+    - value: "8+"
+      label: {en: "instrument families priced", pt: "famílias de instrumentos"}
+    - value: "15+"
+      label: {en: "agent CLIs + MCP servers", pt: "CLIs para agentes + MCP"}
+    - value: "790"
+      label: {en: "PRs merged in 11 months", pt: "PRs em 11 meses"}
+
+work:
+  - org: "BWGI"
+    location: "São Paulo"
+    start: 2025
+    end: null
+    role: {en: "Senior Software Engineer", pt: "Engenheiro de Software Sênior"}
+    bullets:
+      - tags: [fin]
+        text:
+          en: "Took *Bloomberg MARS* front-office pricing from proof of concept to daily production: portfolio generation, SFTP/S3 delivery, error-log parsing and pricing-report ingestion, with regression tests, Datadog tracing and bad-instrument quarantine."
+          pt: "Levei a precificação front-office via *Bloomberg MARS* de prova de conceito a produção diária: geração de carteiras, envio via SFTP/S3, parsing de logs de erro e ingestão de relatórios de preço, com testes de regressão, tracing no Datadog e quarentena de instrumentos inválidos."
+      - tags: [fin]
+        text:
+          en: "Built MARS mappings for 8+ instrument families — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, face-amount scaling and composite tickers."
+          pt: "Construí mapeamentos MARS para mais de 8 famílias de instrumentos — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
+      - tags: [fin, tech]
+        text:
+          en: "Moved portfolio sourcing to vendor PMS platforms (Arcesium) and built an automated tandem reconciliation of legacy vs. new pricing, classifying breaks with two-level tolerances; in production since 2026."
+          pt: "Migrei a origem das carteiras para plataformas PMS de fornecedores (Arcesium) e construí uma conciliação automática entre a precificação legada e a nova, classificando divergências com tolerâncias em dois níveis; em produção desde 2026."
+      - tags: [fin]
+        text:
+          en: "Designed a new risk data pipeline — risk-engine output → PostgreSQL → Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
+          pt: "Projetei um novo pipeline de dados de risco — saída do motor de risco → PostgreSQL → Qlik — com tabelas de gregas e fatores de risco e um controle de qualidade de dados (conciliação entre camadas, outliers por z-score robusto), executado diariamente por fundo."
+      - tags: [tech]
+        text:
+          en: "Designed a Go toolkit of 15+ read-only CLIs and *MCP* servers that let LLM agents (Claude Code, Codex) safely query databases, pipelines, market data and official risk metrics: read-only SQL gates, replica routing, audit log with kill switch, secrets kept out of agent context."
+          pt: "Projetei um toolkit em Go com mais de 15 CLIs somente leitura e servidores *MCP* que permitem a agentes LLM (Claude Code, Codex) consultar com segurança bancos de dados, pipelines, market data e métricas oficiais de risco: bloqueio de SQL de escrita, roteamento para réplicas, log de auditoria com kill switch e segredos fora do contexto do agente."
+      - tags: [tech]
+        text:
+          en: "Wrote 20+ agent skills backed by a docs-as-tests harness, shipped versioned toolkit releases to the risk team and added AI code review to CI."
+          pt: "Escrevi mais de 20 skills para agentes com testes que validam a documentação, distribuí versões do toolkit para o time de risco e adicionei revisão de código por IA ao CI."
+      - tags: [tech]
+        text:
+          en: "Migrated risk and pricing workflows from Airflow 2 to Astronomer (Airflow 3 on Kubernetes) and upgraded 18 shared packages to Pandas 2, NumPy 2 and SQLAlchemy 2."
+          pt: "Migrei fluxos de risco e precificação do Airflow 2 para o Astronomer (Airflow 3 em Kubernetes) e atualizei 18 pacotes compartilhados para Pandas 2, NumPy 2 e SQLAlchemy 2."
+      - tags: [fin, tech]
+        text:
+          en: "Main on-call for pricing and risk; about 790 merged PRs across 32 repositories in 11 months."
+          pt: "Principal plantonista de precificação e risco; cerca de 790 PRs integrados em 32 repositórios em 11 meses."
+      - level: detail
+        tags: [fin, tech]
+        text:
+          en: "Built MSCI Barra portfolio generation and delivery workflows with ISIN validation against the MSCI universe."
+          pt: "Construí fluxos de geração e envio de carteiras para o MSCI Barra, com validação de ISIN contra o universo MSCI."
+      - level: detail
+        tags: [fin, tech]
+        text:
+          en: "Added 10+ REST routes (positions, swap economics, coupon schedules, FX rates, balances, reference data) to the PMS integration API, plus its Python client."
+          pt: "Adicionei mais de 10 rotas REST (posições, economia de swaps, cronogramas de cupom, câmbio, saldos, dados de referência) à API de integração com o PMS, além do cliente Python."
+      - level: detail
+        tags: [fin]
+        text:
+          en: "Delivered CDS pricing from S&P Global data and thematic risk reports for portfolio managers."
+          pt: "Entreguei precificação de CDS com dados da S&P Global e relatórios temáticos de risco para gestores."
+      - level: detail
+        tags: [tech]
+        text:
+          en: "Built an agent-safe Bloomberg end-of-day data CLI (ticker × field × date range, snapshots) with batching and caching."
+          pt: "Construí uma CLI segura para agentes para dados de fechamento da Bloomberg (ticker × campo × período, snapshots) com batching e cache."
+      - level: detail
+        tags: [tech]
+        text:
+          en: "Containerized the pricing lab (9 container images, Helm charts) and prototyped a self-hosted repo-intelligence stack and a sandboxed Python-execution MCP."
+          pt: "Conteinerizei o laboratório de precificação (9 imagens, Helm charts) e prototipei uma stack self-hosted de inteligência de repositórios e um MCP de execução Python isolado."
+
+  - org: "Bank of America"
+    location: "São Paulo"
+    start: 2023
+    end: 2025
+    role:
+      en: "Software Engineer, AVP — FICC Emerging Markets"
+      pt: "Engenheiro de Software, AVP — FICC Mercados Emergentes"
+    note:
+      en: "Joined via BRQ as consultant in 2023; hired directly as Assistant Vice President in 2024."
+      pt: "Entrei como consultor pela BRQ em 2023; contratado diretamente como Assistant Vice President em 2024."
+    bullets:
+      - tags: [fin, tech]
+        text:
+          en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks feeding the sell-side pricing system, plus intraday and end-of-day curve publication to internal databases."
+          pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders alimentando o sistema de precificação sell side, além da publicação intradiária e de fechamento das curvas em bancos internos."
+      - tags: [fin, tech]
+        text:
+          en: "Owned the real-time *PTAX* integration with Banco Central do Brasil — a high-availability service with near-zero fault tolerance, where any failure carries direct reputational risk."
+          pt: "Responsável pela integração em tempo real da *PTAX* com o Banco Central do Brasil — serviço de alta disponibilidade e tolerância a falhas próxima de zero, em que qualquer falha gera risco reputacional direto."
+      - tags: [tech]
+        text:
+          en: "Developed in one of the industry's largest Python monorepos (15+ years, C++ performance layer): event-driven market-data processing on proprietary NoSQL and messaging systems."
+          pt: "Desenvolvi em um dos maiores monorepos Python do setor (mais de 15 anos, camada de performance em C++): processamento de market data orientado a eventos sobre NoSQL e mensageria proprietários."
+      - tags: [fin]
+        text:
+          en: "Supported FX and derivatives traders day to day: rates and inflation curve frameworks, bond pricing tools and production troubleshooting."
+          pt: "Suporte diário a traders de câmbio e derivativos: frameworks de curvas de juros e inflação, ferramentas de precificação de títulos e resolução de incidentes em produção."
+
+  - org: "Apex Capital"
+    location: "São Paulo"
+    start: 2021
+    end: 2022
+    role: {en: "Software Developer", pt: "Desenvolvedor de Software"}
+    note: {en: "Hedge fund", pt: "Hedge fund"}
+    bullets:
+      - tags: [fin, tech]
+        text:
+          en: "Migrated operational routines from Windows Task Scheduler to Apache Airflow, improving reliability and visibility of daily fund processes."
+          pt: "Migrei rotinas operacionais do Agendador de Tarefas do Windows para o Apache Airflow, aumentando a confiabilidade e a visibilidade dos processos diários do fundo."
+      - tags: [fin, tech]
+        text:
+          en: "Integrated financial-service APIs and built dashboards, data visualisations and scrapers for the investment team."
+          pt: "Integrei APIs de serviços financeiros e construí dashboards, visualizações de dados e scrapers para o time de investimentos."
+
+education:
+  - org: {en: "UNICAMP — University of Campinas", pt: "UNICAMP — Universidade Estadual de Campinas"}
+    degree: {en: "MSc, Physical Chemistry", pt: "Mestrado em Físico-Química"}
+    start: 2018
+    end: 2020
+    text:
+      en: "Computational simulation of proteins; daily work with HPC clusters, Python, Julia, C/C++ and Linux."
+      pt: "Simulação computacional de proteínas; uso diário de clusters HPC, Python, Julia, C/C++ e Linux."
+
+projects:
+  - name: "git-archaeologist"
+    url: "https://github.com/neumann-mlucas/git-archaeologist"
+    lang: "Rust"
+    tags: [tech]
+    text:
+      en: "Fast CLI extracting time series from git history (LOC, cohort survival, coupling, hotspots) as TSV, CSV, JSON or Parquet."
+      pt: "CLI rápida que extrai séries temporais do histórico git (LOC, sobrevivência de coortes, acoplamento, hotspots) em TSV, CSV, JSON ou Parquet."
+  - name: "ragwatcher"
+    url: "https://github.com/neumann-mlucas/ragwatcher"
+    lang: "Python"
+    tags: [tech]
+    text:
+      en: "Incremental local RAG over a directory, served as an MCP tool and CLI."
+      pt: "RAG local e incremental sobre um diretório, exposto como ferramenta MCP e CLI."
+  - name: "StringArt.jl"
+    url: "https://github.com/neumann-mlucas/StringArt.jl"
+    lang: "Julia"
+    level: detail
+    tags: [tech]
+    text: {en: "String-art image generator.", pt: "Gerador de imagens em string art."}
+  - name: "belousov-zhabotinsky"
+    url: "https://github.com/neumann-mlucas/belousov-zhabotinsky"
+    lang: "Python"
+    level: detail
+    tags: [tech]
+    text: {en: "ASCII-art simulation of the Belousov–Zhabotinsky reaction.", pt: "Simulação em ASCII art da reação de Belousov–Zhabotinsky."}
+  - name: "PyParseExcel"
+    url: "https://github.com/neumann-mlucas/PyParseExcel"
+    lang: "Python"
+    level: detail
+    tags: [tech]
+    text: {en: "Excel formula parser in pure Python.", pt: "Parser de fórmulas do Excel em Python puro."}
+  - name: "snacks-lexicon.nvim"
+    url: "https://github.com/neumann-mlucas/snacks-lexicon.nvim"
+    lang: "Lua"
+    level: detail
+    tags: [tech]
+    text: {en: "Neovim picker for dictionary and thesaurus lookups over the DICT protocol.", pt: "Picker para Neovim de consultas a dicionários e tesauros via protocolo DICT."}
+
+skills:
+  - label: {en: "Engineering", pt: "Engenharia"}
+    items: "Python, Go, SQL (PostgreSQL, Snowflake), Airflow/Astronomer, Docker, Kubernetes, AWS, Datadog, MCP, Linux, Git"
+  - label: {en: "Financial systems", pt: "Sistemas financeiros"}
+    items: "Bloomberg MARS & market data, Arcesium, MSCI Barra, S&P Global, Qlik"
+  - label: {en: "Domain", pt: "Domínio"}
+    items:
+      en: "Rates, credit, FX, fixed income; derivatives pricing; VaR, expected shortfall, Greeks; reconciliation"
+      pt: "Juros, crédito, câmbio, renda fixa; precificação de derivativos; VaR, expected shortfall, gregas; conciliação"
+
+languages:
+  - name: {en: "Portuguese", pt: "Português"}
+    level: {en: "native", pt: "nativo"}
+  - name: {en: "English", pt: "Inglês"}
+    level: {en: "fluent", pt: "fluente"}

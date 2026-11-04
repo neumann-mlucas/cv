@@ -15,7 +15,7 @@
   stroke: (bottom: 0.5pt + luma(180)), inset: (bottom: 3pt),
 )[
   #box(fill: accent, width: 3pt, height: 0.8em) #h(4pt)
-  #text(size: 8.5pt, weight: "bold", tracking: 1.2pt, upper(title))
+  #text(size: 8.5pt, weight: "bold", tracking: 0.4pt, upper(title))
 ]
 #let head(title, subtitle, dates) = block(above: 0.75em, below: 0.35em, grid(
   columns: (1fr, auto),

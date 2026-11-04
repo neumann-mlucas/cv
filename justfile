@@ -30,3 +30,8 @@ build t lang focus out:
 # Fail unless every given PDF has exactly one page
 check files="pdf/*.pdf":
     for f in {{files}}; do n=$(pdfinfo "$f" | grep -oP '^Pages:\s+\K\d+'); [ "$n" = 1 ] || { echo "$f: $n pages"; exit 1; }; done; echo "all 1 page"
+
+# Run lib/data assertions for every lang × focus
+test:
+    mkdir -p out
+    for l in en pt; do for f in fin tech; do {{tc}} --input lang=$l --input focus=$f tests/lib.typ out/test.pdf; done; done; echo "tests ok"

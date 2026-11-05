@@ -1,0 +1,30 @@
+:root {
+  --bg: #fbfbf8; --fg: #1d1d1f; --muted: #6b6b70; --line: #e4e4e0;
+  --accent: #7A1E2C;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121214; --fg: #ececec; --muted: #9a9aa0; --line: #2a2a30; --accent: #e8919c; }
+}
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 860px; padding: 48px 16px; background: var(--bg); color: var(--fg);
+       font: 16px/1.6 Inter, system-ui, sans-serif; }
+a { color: var(--accent); }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); margin: 0; letter-spacing: -.02em; }
+.headline { color: var(--accent); font-weight: 600; margin: .2em 0; }
+.contact, .meta, .note, .dates, .lang, footer { color: var(--muted); font-size: .9rem; }
+h1, h2 { font-family: "Source Serif 4", Georgia, serif; }
+h2 { font-size: 1.35rem; color: var(--accent); margin-top: 2em; border-bottom: 1px solid var(--line); padding-bottom: .2em; }
+h3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 1em; margin: 1.5em 0 .2em; font-size: 1.05rem; }
+.dates { font-weight: 400; font-variant-numeric: tabular-nums; }
+article { border-left: 3px solid var(--line); padding-left: 16px; transition: border-color .2s; }
+article:hover { border-color: var(--accent); }
+details summary { cursor: pointer; color: var(--accent); font-size: .9rem; }
+.focus { position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.focus input { position: absolute; opacity: 0; }
+.focus label { border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; cursor: pointer; font-size: .9rem; }
+.focus input:checked + label { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.focus input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+body:has(#f-fin:checked) [data-tags]:not([data-tags~="fin"]),
+body:has(#f-tech:checked) [data-tags]:not([data-tags~="tech"]) { display: none; }
+body:has(#f-all:checked) p[data-tags="tech"] { display: none; } /* one summary when showing all */
+footer { margin-top: 4em; border-top: 1px solid var(--line); padding-top: 1em; }

@@ -41,3 +41,11 @@ compare:
 all:
     for l in en pt; do for f in fin tech; do just build {{theme}} $l $f pdf/cv-$l-$f.pdf; done; done
     just check
+
+# Build the static site into out/site
+web:
+    mkdir -p out/site/pt
+    {{tc}} --features html --format html --input lang=en web/index.typ out/site/index.html
+    {{tc}} --features html --format html --input lang=pt web/index.typ out/site/pt/index.html
+    cp web/style.css out/site/style.css
+    cp web/style.css out/site/pt/style.css

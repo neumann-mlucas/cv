@@ -22,11 +22,11 @@ basics:
     - value: "5+"
       label: {en: "years in finance technology", pt: "anos em tecnologia financeira"}
     - value: "8+"
-      label: {en: "instrument families priced", pt: "famílias de instrumentos"}
+      label: {en: "instrument families priced", pt: "famílias de instrumentos precificadas"}
     - value: "15+"
       label: {en: "agent CLIs + MCP servers", pt: "CLIs para agentes + MCP"}
     - value: "790"
-      label: {en: "PRs merged in 11 months", pt: "PRs em 11 meses"}
+      label: {en: "PRs merged in 11 months", pt: "PRs mesclados em 11 meses"}
 
 work:
   - org: "BWGI"
@@ -66,7 +66,7 @@ work:
       - tags: [fin, tech]
         text:
           en: "Main on-call for pricing and risk; about 790 merged PRs across 32 repositories in 11 months."
-          pt: "Principal plantonista de precificação e risco; cerca de 790 PRs integrados em 32 repositórios em 11 meses."
+          pt: "Principal plantonista de precificação e risco; cerca de 790 PRs mesclados em 32 repositórios em 11 meses."
       - level: detail
         tags: [fin, tech]
         text:
@@ -102,7 +102,7 @@ work:
       pt: "Engenheiro de Software, AVP — FICC Mercados Emergentes"
     note:
       en: "Joined via BRQ as consultant in 2023; hired directly as Assistant Vice President in 2024."
-      pt: "Entrei como consultor pela BRQ em 2023; contratado diretamente como Assistant Vice President em 2024."
+      pt: "Entrei como consultor pela BRQ em 2023; fui contratado diretamente como Assistant Vice President em 2024."
     bullets:
       - tags: [fin, tech]
         text:

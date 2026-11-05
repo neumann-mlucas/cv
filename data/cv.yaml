@@ -32,7 +32,7 @@ work:
           pt: "Levei a precificação front-office via *Bloomberg MARS* de prova de conceito a produção diária, com preços de melhor qualidade para classes de produtos não cobertas pelo PMS legado e fim da dependência desse fornecedor. Fluxo automatizado de ponta a ponta (geração de carteiras, envio via SFTP/S3, ingestão de relatórios), com testes de regressão e monitoramento no Datadog."
       - tags: [fin]
         text:
-          en: "Built MARS mappings for rates, credit, FX and fixed-income instruments — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, face-amount scaling and composite tickers."
+          en: "Built MARS mappings for rates, credit, FX and fixed income — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, notional scaling and composite tickers."
           pt: "Construí mapeamentos MARS de juros, crédito, câmbio e renda fixa — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
       - tags: [fin, tech]
         text:
@@ -40,7 +40,7 @@ work:
           pt: "Integrei Bloomberg (MARS, Data License), PMS Arcesium e outros fornecedores de dados por meio de pipelines ETL que cobrem mais de 20 fundos e milhares de instrumentos por dia (3–5 GB por carteira), com conciliação automática contra a precificação legada."
       - tags: [fin, tech]
         text:
-          en: "Designed a new risk data pipeline — risk-engine output~→ PostgreSQL~→ Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
+          en: "Designed a new risk data pipeline (risk engine~→~PostgreSQL~→~Qlik) with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
           pt: "Projetei um novo pipeline de dados de risco — saída do motor de risco~→ PostgreSQL~→ Qlik — com tabelas de gregas e fatores de risco e um controle de qualidade de dados (conciliação entre camadas, outliers por z-score robusto), executado diariamente por fundo."
       - tags: [tech]
         text:

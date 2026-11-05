@@ -52,7 +52,7 @@ work:
           pt: "Conduzi grandes migrações e refatorações em uma base de código legada — orquestração migrada para Airflow 3 em Kubernetes e stack de dados atualizada em *18 pacotes compartilhados* — mantendo em produção os serviços de precificação e risco."
       - tags: [fin, tech]
         text:
-          en: "Main on-call for pricing and risk; *800+ merged PRs* across 32 repositories in 12 months."
+          en: "Primary on-call for pricing and risk; *800+ merged PRs* across 32 repositories in 12 months."
           pt: "Principal plantonista de precificação e risco; *mais de 800 PRs mesclados* em 32 repositórios em 12 meses."
       - level: detail
         tags: [fin, tech]
@@ -114,7 +114,7 @@ work:
       - tags: [fin, tech]
         text:
           en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks reaching the sell-side pricing system in *under 10 seconds*, plus intraday and end-of-day curve publication to internal databases."
-          pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders chegando ao sistema de precificação sell side em *menos de 10 segundos*, além da publicação intradiária e de fechamento das curvas em bancos internos."
+          pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders chegando ao sistema de precificação sell side em *menos de 10 segundos*, além da publicação intradiária e de fechamento das curvas em bases de dados internas."
       - tags: [fin, tech]
         text:
           en: "Owned the real-time *PTAX* integration with Banco Central do Brasil — a high-availability service with near-zero fault tolerance, where any failure carries direct reputational risk."
@@ -122,7 +122,7 @@ work:
       - tags: [tech]
         text:
           en: "Developed in one of the industry's largest Python monorepos (15+ years, C++ performance layer): event-driven market-data processing on proprietary NoSQL and messaging systems."
-          pt: "Desenvolvi em um dos maiores monorepos Python do setor (mais de 15 anos, camada de performance em C++): processamento de market data orientado a eventos sobre NoSQL e mensageria proprietários."
+          pt: "Desenvolvi em um dos maiores monorepos Python do setor (mais de 15 anos, camada de performance em C++): processamento de market data orientado a eventos sobre sistemas proprietários de NoSQL e mensageria."
       - tags: [fin]
         text:
           en: "Supported FX and derivatives traders day to day: rates and inflation curve frameworks, bond pricing tools and production troubleshooting."

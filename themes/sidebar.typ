@@ -21,7 +21,7 @@
 #block(width: 100%, inset: (bottom: 0.6em), stroke: (bottom: 1.5pt + accent))[
   #text(font: "Source Serif 4", size: 26pt, weight: "bold", basics.name) \
   #text(size: 12pt, fill: accent, t(basics.headline)) \
-  #text(size: 9pt, contact().map(link-or-text).join([ · ]))
+  #text(size: 9pt, contact().map(c => box(link-or-text(c))).join([ · ]))
 ]
 
 // Main column first in source order (ATS reading order), sidebar second.

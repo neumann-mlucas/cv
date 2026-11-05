@@ -20,9 +20,11 @@
   #el("p", attrs: (class: "contact"))[#contact().map(link-or-text).join([ · ])]
   #el("p", attrs: (class: "meta"))[
     #if lang == "en" { link("pt/")[Português] } else { link("../")[English] }
-    · PDF:
-    #link(pdf-url(lang, "fin"))[#t((en: "finance", pt: "finanças"))] /
-    #link(pdf-url(lang, "tech"))[#t((en: "engineering", pt: "engenharia"))]
+    #for l in ("en", "pt") [
+      · PDF #upper(l):
+      #link(pdf-url(l, "fin"))[#t((en: "finance", pt: "finanças"))] /
+      #link(pdf-url(l, "tech"))[#t((en: "engineering", pt: "engenharia"))]
+    ]
   ]
 ]
 
@@ -61,12 +63,13 @@
     ]
   }
 
-  #section(L("projects"))
+  #let ptags = projects(web: true).map(tags-of).join(" ").split(" ").dedup().join(" ")
+  #el("section", attrs: (data-tags: ptags))[#section(L("projects"))
   #el("ul", attrs: (class: "projects"))[
     #for p in projects(web: true) {
       el("li", attrs: (data-tags: tags-of(p)))[#link(p.url)[#p.name] #el("span", attrs: (class: "lang"))[#p.lang] — #m(p.text)]
     }
-  ]
+  ]]
 
   #education(section, head)
   #skills(section)

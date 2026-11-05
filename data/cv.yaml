@@ -13,20 +13,11 @@ basics:
     pt: "Engenheiro de Software Sênior — Precificação, Risco e Ferramentas de IA"
   summary:
     fin:
-      en: "Senior software engineer building pricing and risk systems on both sides of the market: a hedge fund, Bank of America's FICC emerging-markets desk and an investment manager. Rates, credit and FX derivatives, Bloomberg MARS, vendor PMS platforms, VaR, expected shortfall and Greeks — backed by strong Python, Go and cloud engineering."
+      en: "Senior software engineer building pricing and risk systems on both sides of the market: a hedge fund, Bank of America's FICC emerging markets desk and an investment manager. Rates, credit and FX derivatives, Bloomberg MARS, vendor PMS platforms, VaR, expected shortfall and Greeks — backed by strong Python, Go and cloud engineering."
       pt: "Engenheiro de software sênior construindo sistemas de precificação e risco no buy side e no sell side: hedge fund, mesa de mercados emergentes (FICC) do Bank of America e gestora de investimentos. Derivativos de juros, crédito e câmbio, Bloomberg MARS, plataformas PMS, VaR, expected shortfall e gregas — com base sólida em Python, Go e cloud."
     tech:
       en: "Senior backend engineer (Python, Go) building data pipelines, cloud infrastructure and AI-agent tooling for financial systems. Designed MCP-based tooling that gives LLM agents safe, read-only access to production data, and owned real-time market-data and pricing services where downtime is not an option."
       pt: "Engenheiro backend sênior (Python, Go) construindo pipelines de dados, infraestrutura cloud e ferramentas para agentes de IA em sistemas financeiros. Projetei ferramentas baseadas em MCP que dão a agentes LLM acesso seguro e somente leitura a dados de produção, e fui responsável por serviços de market data e precificação em tempo real onde indisponibilidade não é opção."
-  kpis:
-    - value: "5+"
-      label: {en: "years in finance technology", pt: "anos em tecnologia financeira"}
-    - value: "8+"
-      label: {en: "instrument families priced", pt: "famílias de instrumentos precificadas"}
-    - value: "15+"
-      label: {en: "agent CLIs + MCP servers", pt: "CLIs para agentes + MCP"}
-    - value: "790"
-      label: {en: "PRs merged in 11 months", pt: "PRs mesclados em 11 meses"}
 
 work:
   - org: "BWGI"

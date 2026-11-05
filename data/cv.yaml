@@ -118,7 +118,7 @@ work:
     bullets:
       - tags: [fin, tech]
         text:
-          en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks reaching the sell-side pricing system *within seconds*, plus intraday and end-of-day curve publication to internal databases; onboarded new engineers to the curve stack."
+          en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks reaching the sell-side pricing system *within seconds*, plus intraday and EOD curve publication to internal databases; onboarded new engineers to the curve stack."
           pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders chegando ao sistema de precificação sell side em *questão de segundos*, além da publicação intradiária e de fechamento das curvas em bases de dados internas; fiz o onboarding de novos engenheiros na stack de curvas."
       - tags: [fin, tech]
         text:

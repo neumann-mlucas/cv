@@ -3,8 +3,8 @@
 #let accent = rgb("#7A1E2C")
 #set document(title: basics.name + " — CV", author: basics.name, date: none)
 #set page(paper: "a4", margin: (x: 1.4cm, y: 1.2cm))
-#set text(font: "Inter", size: if lang == "pt" { 9.7pt } else { 10.1pt }, lang: lang, hyphenate: false)
-#set par(justify: true, leading: 0.6em, spacing: 0.7em,
+#set text(font: "Inter", size: if lang == "pt" { 9.4pt } else { 9.8pt }, lang: lang, hyphenate: false)
+#set par(justify: false, leading: 0.6em, spacing: 0.7em,
   justification-limits: (tracking: (min: -0.012em, max: 0.025em)))
 #set list(indent: 0.2em, spacing: 0.75em, marker: text(fill: accent)[▸])
 #show link: set text(fill: accent)

@@ -1,7 +1,7 @@
 #import "/lib.typ": *
 
 #let accent = rgb("#7A1E2C")
-#set document(title: basics.name + " — CV", author: basics.name)
+#set document(title: basics.name + " — CV", author: basics.name, date: none)
 #set page(paper: "a4", margin: (x: 1.4cm, y: 1.2cm))
 #set text(font: "Inter", size: if lang == "pt" { 9.6pt } else { 10pt }, lang: lang)
 #set par(justify: false, leading: 0.6em, spacing: 0.7em)

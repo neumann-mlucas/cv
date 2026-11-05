@@ -32,28 +32,28 @@ work:
           pt: "Levei a precificação front-office via *Bloomberg MARS* de prova de conceito a produção diária: geração de carteiras, envio via SFTP/S3, parsing de logs de erro e ingestão de relatórios de preço, com testes de regressão, tracing no Datadog e quarentena de instrumentos inválidos."
       - tags: [fin]
         text:
-          en: "Built MARS mappings for 8+ instrument families — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, face-amount scaling and composite tickers."
-          pt: "Construí mapeamentos MARS para mais de 8 famílias de instrumentos — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
+          en: "Built MARS mappings for *8+ instrument families* — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, face-amount scaling and composite tickers."
+          pt: "Construí mapeamentos MARS para *mais de 8 famílias de instrumentos* — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
       - tags: [fin, tech]
         text:
           en: "Integrated vendor platforms — Bloomberg (MARS, Data License), Arcesium PMS and other third-party data and pricing products — through complex, high-throughput ETL pipelines, with automated reconciliation against legacy pricing."
           pt: "Integrei plataformas de fornecedores — Bloomberg (MARS, Data License), PMS Arcesium e outros produtos de dados e precificação — por meio de pipelines ETL complexos e de alto volume, com conciliação automática contra a precificação legada."
       - tags: [fin, tech]
         text:
-          en: "Designed a new risk data pipeline — risk-engine output → PostgreSQL → Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
-          pt: "Projetei um novo pipeline de dados de risco — saída do motor de risco → PostgreSQL → Qlik — com tabelas de gregas e fatores de risco e um controle de qualidade de dados (conciliação entre camadas, outliers por z-score robusto), executado diariamente por fundo."
+          en: "Designed a new risk data pipeline — risk-engine output~→ PostgreSQL~→ Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
+          pt: "Projetei um novo pipeline de dados de risco — saída do motor de risco~→ PostgreSQL~→ Qlik — com tabelas de gregas e fatores de risco e um controle de qualidade de dados (conciliação entre camadas, outliers por z-score robusto), executado diariamente por fundo."
       - tags: [tech]
         text:
-          en: "Built AI-agent tooling for the risk and pricing teams: a Go toolkit of CLIs and *MCP* servers plus 20+ agent skills that give LLM agents governed access to internal data and systems, shipped as versioned releases."
-          pt: "Construí ferramentas de agentes de IA para os times de risco e precificação: um toolkit em Go com CLIs e servidores *MCP*, além de mais de 20 skills, que dão a agentes LLM acesso controlado a dados e sistemas internos, distribuído em versões."
+          en: "Built AI-agent tooling for the risk and pricing teams: a Go toolkit of CLIs and *MCP* servers plus *20+ agent skills* that give LLM agents governed access to internal data and systems, shipped as versioned releases."
+          pt: "Construí ferramentas de agentes de IA para os times de risco e precificação: um toolkit em Go com CLIs e servidores *MCP*, além de *mais de 20 skills*, que dão a agentes LLM acesso controlado a dados e sistemas internos, distribuído em versões."
       - tags: [tech]
         text:
-          en: "Led large migrations and refactors across a legacy codebase — orchestration moved to Airflow 3 on Kubernetes, core data stack upgraded across 18 shared packages — while keeping pricing and risk services running in production."
-          pt: "Conduzi grandes migrações e refatorações em uma base de código legada — orquestração migrada para Airflow 3 em Kubernetes e stack de dados atualizada em 18 pacotes compartilhados — mantendo em produção os serviços de precificação e risco."
+          en: "Led large migrations and refactors across a legacy codebase — orchestration moved to Airflow 3 on Kubernetes, core data stack upgraded across *18 shared packages* — while keeping pricing and risk services running in production."
+          pt: "Conduzi grandes migrações e refatorações em uma base de código legada — orquestração migrada para Airflow 3 em Kubernetes e stack de dados atualizada em *18 pacotes compartilhados* — mantendo em produção os serviços de precificação e risco."
       - tags: [fin, tech]
         text:
-          en: "Main on-call for pricing and risk; 800+ merged PRs across 32 repositories in 12 months."
-          pt: "Principal plantonista de precificação e risco; mais de 800 PRs mesclados em 32 repositórios em 12 meses."
+          en: "Main on-call for pricing and risk; *800+ merged PRs* across 32 repositories in 12 months."
+          pt: "Principal plantonista de precificação e risco; *mais de 800 PRs mesclados* em 32 repositórios em 12 meses."
       - level: detail
         tags: [fin, tech]
         text:
@@ -105,16 +105,16 @@ work:
     start: 2023
     end: 2025
     role:
-      en: "Software Engineer, AVP — FICC Emerging Markets"
-      pt: "Engenheiro de Software, AVP — FICC Mercados Emergentes"
+      en: "Software Engineer, AVP"
+      pt: "Engenheiro de Software, AVP"
     note:
-      en: "Joined via BRQ as consultant in 2023; hired directly as Assistant Vice President in 2024."
-      pt: "Entrei como consultor pela BRQ em 2023; fui contratado diretamente como Assistant Vice President em 2024."
+      en: "FICC Emerging Markets. Joined via BRQ as consultant in 2023; hired directly as AVP in 2024."
+      pt: "FICC Mercados Emergentes. Entrei como consultor pela BRQ em 2023; fui contratado diretamente como AVP em 2024."
     bullets:
       - tags: [fin, tech]
         text:
-          en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks reaching the sell-side pricing system in under 10 seconds, plus intraday and end-of-day curve publication to internal databases."
-          pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders chegando ao sistema de precificação sell side em menos de 10 segundos, além da publicação intradiária e de fechamento das curvas em bancos internos."
+          en: "Built and ran real-time curve infrastructure for the EM derivatives and FX trading desk: live market data and trader curve marks reaching the sell-side pricing system in *under 10 seconds*, plus intraday and end-of-day curve publication to internal databases."
+          pt: "Construí e operei a infraestrutura de curvas em tempo real da mesa de derivativos e câmbio de mercados emergentes: market data e marcações dos traders chegando ao sistema de precificação sell side em *menos de 10 segundos*, além da publicação intradiária e de fechamento das curvas em bancos internos."
       - tags: [fin, tech]
         text:
           en: "Owned the real-time *PTAX* integration with Banco Central do Brasil — a high-availability service with near-zero fault tolerance, where any failure carries direct reputational risk."

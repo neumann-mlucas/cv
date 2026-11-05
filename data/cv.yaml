@@ -28,8 +28,8 @@ work:
     bullets:
       - tags: [fin]
         text:
-          en: "Took *Bloomberg MARS* front-office pricing from proof of concept to daily production: portfolio generation, SFTP/S3 delivery, error-log parsing and pricing-report ingestion, with regression tests, Datadog tracing and bad-instrument quarantine."
-          pt: "Levei a precificação front-office via *Bloomberg MARS* de prova de conceito a produção diária: geração de carteiras, envio via SFTP/S3, parsing de logs de erro e ingestão de relatórios de preço, com testes de regressão, tracing no Datadog e quarentena de instrumentos inválidos."
+          en: "Took *Bloomberg MARS* front-office pricing from proof of concept to daily production, delivering better-quality prices for product classes the legacy PMS did not cover and removing lock-in to that vendor. Automated end to end (portfolio generation, SFTP/S3 delivery, report ingestion) with regression tests and Datadog monitoring."
+          pt: "Levei a precificação front-office via *Bloomberg MARS* de prova de conceito a produção diária, com preços de melhor qualidade para classes de produtos não cobertas pelo PMS legado e fim da dependência desse fornecedor. Fluxo automatizado de ponta a ponta (geração de carteiras, envio via SFTP/S3, ingestão de relatórios), com testes de regressão e monitoramento no Datadog."
       - tags: [fin]
         text:
           en: "Built MARS mappings for *8+ instrument families* — IRS (cleared, OIS, CPI), CDS, TRS, FX forwards/NDFs, barrier and digital options, bonds, CDs and repos — handling quote conventions, face-amount scaling and composite tickers."

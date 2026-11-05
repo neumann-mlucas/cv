@@ -184,11 +184,6 @@ projects:
     lang: "Julia"
     tags: [fin, tech]
     text: {en: "Generative art: pointillist images via Monte Carlo sampling.", pt: "Arte generativa: imagens pontilhistas por amostragem Monte Carlo."}
-  - name: "belousov-zhabotinsky"
-    url: "https://github.com/neumann-mlucas/belousov-zhabotinsky"
-    lang: "Python"
-    tags: [fin, tech]
-    text: {en: "ASCII-art simulation of the Belousov–Zhabotinsky oscillating reaction.", pt: "Simulação em ASCII art da reação oscilante de Belousov–Zhabotinsky."}
   - name: "PyParseExcel"
     url: "https://github.com/neumann-mlucas/PyParseExcel"
     lang: "Python"

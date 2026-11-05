@@ -5,7 +5,7 @@
 #set page(paper: "a4", margin: (x: 1.4cm, y: 1.2cm))
 #set text(font: "Inter", size: if lang == "pt" { 9.9pt } else { 10.3pt }, lang: lang, hyphenate: false)
 #set par(justify: true, leading: 0.6em, spacing: 0.7em)
-#set list(indent: 0.2em, spacing: 0.55em, marker: text(fill: accent)[▸])
+#set list(indent: 0.2em, spacing: 0.7em, marker: text(fill: accent)[▸])
 #show link: set text(fill: accent)
 
 #let section(title) = block(above: 1.25em, below: 0.55em,
@@ -38,6 +38,6 @@
     #set par(justify: false)
     #skills(section, stacked: true)
     #education(section, side-head)
-    #projects-block(section)
+    #projects-block(section, stacked: true)
   ],
 )

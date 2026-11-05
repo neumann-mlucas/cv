@@ -16,8 +16,8 @@ basics:
       en: "Senior software engineer building pricing and risk systems on both sides of the market: a hedge fund, Bank of America's FICC emerging markets desk and an investment manager. Rates, credit and FX derivatives, Bloomberg MARS, vendor PMS platforms, VaR, expected shortfall and Greeks — backed by strong Python, Go and cloud engineering."
       pt: "Engenheiro de software sênior construindo sistemas de precificação e risco no buy side e no sell side: hedge fund, mesa de mercados emergentes (FICC) do Bank of America e gestora de investimentos. Derivativos de juros, crédito e câmbio, Bloomberg MARS, plataformas PMS, VaR, expected shortfall e gregas — com base sólida em Python, Go e cloud."
     tech:
-      en: "Senior backend engineer (Python, Go) building data pipelines, cloud infrastructure and AI-agent tooling for financial systems. Designed MCP-based tooling that gives LLM agents safe, read-only access to production data, and owned real-time market-data and pricing services where downtime is not an option."
-      pt: "Engenheiro backend sênior (Python, Go) construindo pipelines de dados, infraestrutura cloud e ferramentas para agentes de IA em sistemas financeiros. Projetei ferramentas baseadas em MCP que dão a agentes LLM acesso seguro e somente leitura a dados de produção, e fui responsável por serviços de market data e precificação em tempo real onde indisponibilidade não é opção."
+      en: "Senior backend engineer (Python, Go) building data pipelines, cloud infrastructure and AI-agent tooling for financial systems. Five years in buy- and sell-side finance: real-time market-data and pricing services where downtime is not an option, high-throughput ETL integrations with vendor platforms and large migrations of legacy codebases. Most recently, MCP-based tooling that gives LLM agents governed access to production data and systems."
+      pt: "Engenheiro backend sênior (Python, Go) construindo pipelines de dados, infraestrutura cloud e ferramentas para agentes de IA em sistemas financeiros. Cinco anos no buy side e no sell side: serviços de market data e precificação em tempo real onde indisponibilidade não é opção, integrações ETL de alto volume com plataformas de fornecedores e grandes migrações de bases de código legadas. Mais recentemente, ferramentas baseadas em MCP que dão a agentes LLM acesso controlado a dados e sistemas de produção."
 
 work:
   - org: "BWGI"
@@ -36,8 +36,8 @@ work:
           pt: "Construí mapeamentos MARS para mais de 8 famílias de instrumentos — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
       - tags: [fin, tech]
         text:
-          en: "Integrated vendor platforms — Arcesium PMS and other third-party data and pricing products — through complex, high-throughput ETL pipelines, with automated reconciliation against legacy pricing."
-          pt: "Integrei plataformas de fornecedores — PMS Arcesium e outros produtos de dados e precificação — por meio de pipelines ETL complexos e de alto volume, com conciliação automática contra a precificação legada."
+          en: "Integrated vendor platforms — Bloomberg (MARS, Data License), Arcesium PMS and other third-party data and pricing products — through complex, high-throughput ETL pipelines, with automated reconciliation against legacy pricing."
+          pt: "Integrei plataformas de fornecedores — Bloomberg (MARS, Data License), PMS Arcesium e outros produtos de dados e precificação — por meio de pipelines ETL complexos e de alto volume, com conciliação automática contra a precificação legada."
       - tags: [fin, tech]
         text:
           en: "Designed a new risk data pipeline — risk-engine output → PostgreSQL → Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
@@ -52,8 +52,8 @@ work:
           pt: "Conduzi grandes migrações e refatorações em uma base de código legada — orquestração migrada para Airflow 3 em Kubernetes e stack de dados atualizada em 18 pacotes compartilhados — mantendo em produção os serviços de precificação e risco."
       - tags: [fin, tech]
         text:
-          en: "Main on-call for pricing and risk; about 790 merged PRs across 32 repositories in 11 months."
-          pt: "Principal plantonista de precificação e risco; cerca de 790 PRs mesclados em 32 repositórios em 11 meses."
+          en: "Main on-call for pricing and risk; 800+ merged PRs across 32 repositories in 12 months."
+          pt: "Principal plantonista de precificação e risco; mais de 800 PRs mesclados em 32 repositórios em 12 meses."
       - level: detail
         tags: [fin, tech]
         text:
@@ -199,13 +199,13 @@ projects:
 
 skills:
   - label: {en: "Engineering", pt: "Engenharia"}
-    items: "Python, Go, SQL (PostgreSQL, Snowflake), Airflow/Astronomer, Docker, Kubernetes, AWS, Datadog, MCP, Linux, Git"
+    items: "Python, Go, SQL (PostgreSQL, Snowflake), MongoDB, Redis, Airflow/Astronomer, Docker, Kubernetes, AWS, Datadog, MCP, Linux, Git"
   - label: {en: "Financial systems", pt: "Sistemas financeiros"}
     items: "Bloomberg MARS & market data, Arcesium, MSCI Barra, S&P Global, Qlik"
   - label: {en: "Domain", pt: "Domínio"}
     items:
-      en: "Rates, credit, FX, fixed income; derivatives pricing; VaR, expected shortfall, Greeks; reconciliation"
-      pt: "Juros, crédito, câmbio, renda fixa; precificação de derivativos; VaR, expected shortfall, gregas; conciliação"
+      en: "Rates, credit, FX, fixed income; derivatives pricing; VaR, expected shortfall, Greeks"
+      pt: "Juros, crédito, câmbio, renda fixa; precificação de derivativos; VaR, expected shortfall, gregas"
 
 languages:
   - name: {en: "Portuguese", pt: "Português"}

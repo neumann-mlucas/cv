@@ -75,7 +75,7 @@
   let rows = data.skills.map(s => (t(s.label), t(s.items)))
   rows.push((L("languages"), data.languages.map(l => t(l.name) + " (" + t(l.level) + ")").join(", ")))
   for (k, v) in rows {
-    if stacked { block(spacing: 0.9em)[*#k* \ #v] } else { [*#k:* #v]; linebreak() }
+    if stacked { block(spacing: 0.75em)[*#k* \ #v] } else { [*#k:* #v]; linebreak() }
   }
 }
 
@@ -87,7 +87,7 @@
   if ps.len() > 0 {
     section(L("projects"))
     for p in ps {
-      if stacked { block(spacing: 0.9em)[#project-name(p, strong[#p.name]) (#p.lang) \ #m(p.text)] }
+      if stacked { block(spacing: 0.75em)[#project-name(p, strong[#p.name]) (#p.lang) \ #m(p.text)] }
       else { [#project-name(p, strong[#p.name]) (#p.lang) — #m(p.text)]; linebreak() }
     }
   }

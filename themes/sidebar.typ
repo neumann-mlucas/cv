@@ -3,9 +3,9 @@
 #let accent = rgb("#7A1E2C")
 #set document(title: basics.name + " — CV", author: basics.name, date: none)
 #set page(paper: "a4", margin: (x: 1.4cm, y: 1.2cm))
-#set text(font: "Inter", size: if lang == "pt" { 9.9pt } else { 10.3pt }, lang: lang, hyphenate: false)
+#set text(font: "Inter", size: if lang == "pt" { 9.7pt } else { 10.1pt }, lang: lang, hyphenate: false)
 #set par(justify: true, leading: 0.6em, spacing: 0.7em)
-#set list(indent: 0.2em, spacing: 0.7em, marker: text(fill: accent)[▸])
+#set list(indent: 0.2em, spacing: 0.6em, marker: text(fill: accent)[▸])
 #show link: set text(fill: accent)
 
 #let section(title) = block(above: 1.25em, below: 0.55em,
@@ -27,13 +27,14 @@
 
 // Main column first in source order (ATS reading order), sidebar second.
 #grid(
-  columns: (1fr, 5.6cm), rows: (1fr,), column-gutter: 0.8cm,
+  columns: (1fr, 5.6cm), column-gutter: 0.8cm,
+  fill: (none, luma(247)), inset: (x, y) => if x == 1 { 8pt } else { 0pt },
   [
     #section(L("summary"))
     #summary
     #experience(section, head)
   ],
-  block(fill: luma(247), inset: 8pt, width: 100%, height: 100%)[
+  [
     #set text(size: 9.5pt)
     #set par(justify: false)
     #skills(section, stacked: true)

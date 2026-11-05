@@ -3,8 +3,8 @@
 #let accent = rgb("#7A1E2C")
 #set document(title: basics.name + " — CV", author: basics.name, date: none)
 #set page(paper: "a4", margin: (x: 1.4cm, y: 1.2cm))
-#set text(font: "Inter", size: if lang == "pt" { 9.6pt } else { 10pt }, lang: lang)
-#set par(justify: false, leading: 0.6em, spacing: 0.7em)
+#set text(font: "Inter", size: if lang == "pt" { 9.9pt } else { 10.3pt }, lang: lang, hyphenate: false)
+#set par(justify: true, leading: 0.6em, spacing: 0.7em)
 #set list(indent: 0.2em, spacing: 0.55em, marker: text(fill: accent)[▸])
 #show link: set text(fill: accent)
 
@@ -19,6 +19,7 @@
 ]
 
 #block(width: 100%, inset: (bottom: 0.6em), stroke: (bottom: 1.5pt + accent))[
+  #set par(justify: false)
   #text(font: "Source Serif 4", size: 26pt, weight: "bold", basics.name) \
   #text(size: 12pt, fill: accent, t(basics.headline)) \
   #text(size: 9pt, contact().map(c => box(link-or-text(c))).join([ · ]))
@@ -26,14 +27,15 @@
 
 // Main column first in source order (ATS reading order), sidebar second.
 #grid(
-  columns: (1fr, 5.6cm), column-gutter: 0.8cm,
+  columns: (1fr, 5.6cm), rows: (1fr,), column-gutter: 0.8cm,
   [
     #section(L("summary"))
     #summary
     #experience(section, head)
   ],
-  block(fill: luma(247), inset: 8pt, width: 100%)[
+  block(fill: luma(247), inset: 8pt, width: 100%, height: 100%)[
     #set text(size: 9.5pt)
+    #set par(justify: false)
     #skills(section, stacked: true)
     #education(section, side-head)
     #projects-block(section)

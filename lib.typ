@@ -79,10 +79,13 @@
   }
 }
 
+// Project name, linked when it has a public url.
+#let project-name(p, body) = if "url" in p { link(p.url, body) } else { body }
+
 #let projects-block(section) = {
   let ps = projects()
   if ps.len() > 0 {
     section(L("projects"))
-    for p in ps { [#link(p.url)[*#p.name*] (#p.lang) — #m(p.text)]; linebreak() }
+    for p in ps { [#project-name(p, strong[#p.name]) (#p.lang) — #m(p.text)]; linebreak() }
   }
 }

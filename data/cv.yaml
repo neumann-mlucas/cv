@@ -36,28 +36,44 @@ work:
           pt: "Construí mapeamentos MARS para mais de 8 famílias de instrumentos — IRS (compensados, OIS, CPI), CDS, TRS, termos de moeda/NDFs, opções de barreira e digitais, títulos, certificados de depósito e compromissadas — tratando convenções de cotação, escala de nocional e tickers compostos."
       - tags: [fin, tech]
         text:
-          en: "Moved portfolio sourcing to vendor PMS platforms (Arcesium) and built an automated tandem reconciliation of legacy vs. new pricing, classifying breaks with two-level tolerances; in production since 2026."
-          pt: "Migrei a origem das carteiras para plataformas PMS de fornecedores (Arcesium) e construí uma conciliação automática entre a precificação legada e a nova, classificando divergências com tolerâncias em dois níveis; em produção desde 2026."
-      - tags: [fin]
+          en: "Integrated vendor platforms — Arcesium PMS and other third-party data and pricing products — through complex, high-throughput ETL pipelines, with automated reconciliation against legacy pricing."
+          pt: "Integrei plataformas de fornecedores — PMS Arcesium e outros produtos de dados e precificação — por meio de pipelines ETL complexos e de alto volume, com conciliação automática contra a precificação legada."
+      - tags: [fin, tech]
         text:
           en: "Designed a new risk data pipeline — risk-engine output → PostgreSQL → Qlik — with Greeks and risk-factor serving tables and a data-quality gate (cross-layer reconciliation, robust z-score outliers), run daily per fund."
           pt: "Projetei um novo pipeline de dados de risco — saída do motor de risco → PostgreSQL → Qlik — com tabelas de gregas e fatores de risco e um controle de qualidade de dados (conciliação entre camadas, outliers por z-score robusto), executado diariamente por fundo."
       - tags: [tech]
         text:
-          en: "Designed a Go toolkit of 15+ read-only CLIs and *MCP* servers that let LLM agents (Claude Code, Codex) safely query databases, pipelines, market data and official risk metrics: read-only SQL gates, replica routing, audit log with kill switch, secrets kept out of agent context."
-          pt: "Projetei um toolkit em Go com mais de 15 CLIs somente leitura e servidores *MCP* que permitem a agentes LLM (Claude Code, Codex) consultar com segurança bancos de dados, pipelines, market data e métricas oficiais de risco: bloqueio de SQL de escrita, roteamento para réplicas, log de auditoria com kill switch e segredos fora do contexto do agente."
+          en: "Built AI-agent tooling for the risk and pricing teams: a Go toolkit of CLIs and *MCP* servers plus 20+ agent skills that give LLM agents governed access to internal data and systems, shipped as versioned releases."
+          pt: "Construí ferramentas de agentes de IA para os times de risco e precificação: um toolkit em Go com CLIs e servidores *MCP*, além de mais de 20 skills, que dão a agentes LLM acesso controlado a dados e sistemas internos, distribuído em versões."
       - tags: [tech]
         text:
-          en: "Wrote 20+ agent skills backed by a docs-as-tests harness, shipped versioned toolkit releases to the risk team and added AI code review to CI."
-          pt: "Escrevi mais de 20 skills para agentes com testes que validam a documentação, distribuí versões do toolkit para o time de risco e adicionei revisão de código por IA ao CI."
-      - tags: [tech]
-        text:
-          en: "Migrated risk and pricing workflows from Airflow 2 to Astronomer (Airflow 3 on Kubernetes) and upgraded 18 shared packages to Pandas 2, NumPy 2 and SQLAlchemy 2."
-          pt: "Migrei fluxos de risco e precificação do Airflow 2 para o Astronomer (Airflow 3 em Kubernetes) e atualizei 18 pacotes compartilhados para Pandas 2, NumPy 2 e SQLAlchemy 2."
+          en: "Led large migrations and refactors across a legacy codebase — orchestration moved to Airflow 3 on Kubernetes, core data stack upgraded across 18 shared packages — while keeping pricing and risk services running in production."
+          pt: "Conduzi grandes migrações e refatorações em uma base de código legada — orquestração migrada para Airflow 3 em Kubernetes e stack de dados atualizada em 18 pacotes compartilhados — mantendo em produção os serviços de precificação e risco."
       - tags: [fin, tech]
         text:
           en: "Main on-call for pricing and risk; about 790 merged PRs across 32 repositories in 11 months."
           pt: "Principal plantonista de precificação e risco; cerca de 790 PRs mesclados em 32 repositórios em 11 meses."
+      - level: detail
+        tags: [fin, tech]
+        text:
+          en: "Moved portfolio sourcing to vendor PMS platforms (Arcesium) and built an automated tandem reconciliation of legacy vs. new pricing, classifying breaks with two-level tolerances; in production since 2026."
+          pt: "Migrei a origem das carteiras para plataformas PMS de fornecedores (Arcesium) e construí uma conciliação automática entre a precificação legada e a nova, classificando divergências com tolerâncias em dois níveis; em produção desde 2026."
+      - level: detail
+        tags: [tech]
+        text:
+          en: "Designed a Go toolkit of 15+ read-only CLIs and *MCP* servers that let LLM agents (Claude Code, Codex) safely query databases, pipelines, market data and official risk metrics: read-only SQL gates, replica routing, audit log with kill switch, secrets kept out of agent context."
+          pt: "Projetei um toolkit em Go com mais de 15 CLIs somente leitura e servidores *MCP* que permitem a agentes LLM (Claude Code, Codex) consultar com segurança bancos de dados, pipelines, market data e métricas oficiais de risco: bloqueio de SQL de escrita, roteamento para réplicas, log de auditoria com kill switch e segredos fora do contexto do agente."
+      - level: detail
+        tags: [tech]
+        text:
+          en: "Wrote 20+ agent skills backed by a docs-as-tests harness, shipped versioned toolkit releases to the risk team and added AI code review to CI."
+          pt: "Escrevi mais de 20 skills para agentes com testes que validam a documentação, distribuí versões do toolkit para o time de risco e adicionei revisão de código por IA ao CI."
+      - level: detail
+        tags: [tech]
+        text:
+          en: "Migrated risk and pricing workflows from Airflow 2 to Astronomer (Airflow 3 on Kubernetes) and upgraded 18 shared packages to Pandas 2, NumPy 2 and SQLAlchemy 2."
+          pt: "Migrei fluxos de risco e precificação do Airflow 2 para o Astronomer (Airflow 3 em Kubernetes) e atualizei 18 pacotes compartilhados para Pandas 2, NumPy 2 e SQLAlchemy 2."
       - level: detail
         tags: [fin, tech]
         text:
@@ -141,7 +157,7 @@ projects:
   - name: "git-archaeologist"
     url: "https://github.com/neumann-mlucas/git-archaeologist"
     lang: "Rust"
-    tags: [tech]
+    tags: [fin, tech]
     text:
       en: "Fast CLI extracting time series from git history (LOC, cohort survival, coupling, hotspots) as TSV, CSV, JSON or Parquet."
       pt: "CLI rápida que extrai séries temporais do histórico git (LOC, sobrevivência de coortes, acoplamento, hotspots) em TSV, CSV, JSON ou Parquet."
@@ -152,18 +168,27 @@ projects:
     text:
       en: "Incremental local RAG over a directory, served as an MCP tool and CLI."
       pt: "RAG local e incremental sobre um diretório, exposto como ferramenta MCP e CLI."
+  - name: "visidata-rs"
+    lang: "Rust"
+    tags: [fin, tech]
+    text:
+      en: "Rewrite of the VisiData terminal data explorer in Rust (Polars, Ratatui), Lua-extensible like Neovim; in progress."
+      pt: "Reescrita em Rust (Polars, Ratatui) do explorador de dados de terminal VisiData, extensível em Lua como o Neovim; em andamento."
   - name: "StringArt.jl"
     url: "https://github.com/neumann-mlucas/StringArt.jl"
     lang: "Julia"
-    level: detail
-    tags: [tech]
-    text: {en: "String-art image generator.", pt: "Gerador de imagens em string art."}
+    tags: [fin, tech]
+    text: {en: "Generative art: turns photos into string-art patterns.", pt: "Arte generativa: transforma fotos em padrões de string art."}
+  - name: "MonteCarloArt.jl"
+    url: "https://github.com/neumann-mlucas/MonteCarloArt.jl"
+    lang: "Julia"
+    tags: [fin, tech]
+    text: {en: "Generative art: pointillist images via Monte Carlo sampling.", pt: "Arte generativa: imagens pontilhistas por amostragem Monte Carlo."}
   - name: "belousov-zhabotinsky"
     url: "https://github.com/neumann-mlucas/belousov-zhabotinsky"
     lang: "Python"
-    level: detail
-    tags: [tech]
-    text: {en: "ASCII-art simulation of the Belousov–Zhabotinsky reaction.", pt: "Simulação em ASCII art da reação de Belousov–Zhabotinsky."}
+    tags: [fin, tech]
+    text: {en: "ASCII-art simulation of the Belousov–Zhabotinsky oscillating reaction.", pt: "Simulação em ASCII art da reação oscilante de Belousov–Zhabotinsky."}
   - name: "PyParseExcel"
     url: "https://github.com/neumann-mlucas/PyParseExcel"
     lang: "Python"

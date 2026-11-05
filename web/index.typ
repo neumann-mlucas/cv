@@ -67,7 +67,7 @@
   #el("section", attrs: (data-tags: ptags))[#section(L("projects"))
   #el("ul", attrs: (class: "projects"))[
     #for p in projects(web: true) {
-      el("li", attrs: (data-tags: tags-of(p)))[#link(p.url)[#p.name] #el("span", attrs: (class: "lang"))[#p.lang] — #m(p.text)]
+      el("li", attrs: (data-tags: tags-of(p)))[#project-name(p, p.name) #el("span", attrs: (class: "lang"))[#p.lang] — #m(p.text)]
     }
   ]]
 
